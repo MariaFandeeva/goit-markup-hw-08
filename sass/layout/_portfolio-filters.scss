@@ -1,0 +1,33 @@
+.filters-btn {
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
+  font-family: inherit;
+  @include font(16px, 500, 26px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: var(--btn-color);
+  background-color: #f5f4fa;
+  text-align: center;
+  padding: 6px 22px;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filters-list {
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
