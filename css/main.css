@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 
-.submit-btn, .modal-close-btn, .header-tel__link, .preference-item__picture, .client, .footer-social-link {
+.submit-btn, .modal-close-btn, .preference-item__picture, .client, .footer-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,11 +71,29 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -105,37 +123,21 @@ img {
 
 .logo {
   font-family: "Raleway", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19231;
+  line-height: 1.29167;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--title-color);
 }
 
 .header__logo {
   font-family: "Raleway", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19231;
+  line-height: 1.29167;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 93px;
-}
-
-.footer-logo-link {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-family: "Raleway", Arial, sans-serif;
-  font-style: normal;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19231;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.footer__logo {
-  color: #ffffff;
 }
 
 .social-list__link {
@@ -443,102 +445,35 @@ img {
   background-color: #188ce8;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
+.header-nav__list {
+  display: none;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.header__link {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14286;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-  padding: 32px 0;
-  transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.header__link:hover, .header__link:focus {
-  color: var(--accent-color);
-}
-
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-
-.header__item {
-  display: block;
-  position: relative;
-}
-
-.header__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-tel__link {
-  transition: color var(--transition-duration) var(--transition-timing-function);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--header-color);
-}
-
-.header-tel__link:hover, .header-tel__link:focus {
-  color: var(--accent-color);
-}
-
-.header-mail__link {
-  transition: color var(--transition-duration) var(--transition-timing-function);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14286;
-  letter-spacing: 0.02em;
-  color: var(--header-color);
-  margin-left: auto;
-}
-
-.header-mail__link:hover, .header-mail__link:focus {
-  color: var(--accent-color);
+.header__tel {
+  display: none;
 }
 
 .header__mail {
-  margin-right: 50px;
+  display: none;
 }
 
-.header-contact__list {
-  margin-left: auto;
+.mobile-menu-open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
 }
 
-.header-mail__icon {
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-  margin-right: 10px;
-  fill: var(--main-text-color);
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header-mail__link:focus .header-mail__icon,
-.header-mail__link:hover .header-mail__icon {
-  fill: var(--accent-color);
-}
-
-.header-tel__icon {
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-  margin-right: 10px;
-  fill: var(--main-text-color);
-}
-
-.header-tel__link:focus .header-tel__icon,
-.header-tel__link:hover .header-tel__icon {
-  fill: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .header-nav__list {
+    display: flex;
+  }
 }
 
 .hero {
