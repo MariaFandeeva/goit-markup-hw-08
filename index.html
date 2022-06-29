@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open-btn">
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
           <svg class="mobile-menu-open__icon" width="40" height="40">
             <use href="./images/sprite.svg#burger_icon"></use>
           </svg>
@@ -63,6 +63,26 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+<button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      <div class="mobile-menu__nav">
+        <ul class="mobile-nav list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link mobile-nav__link--active" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link " href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link link" href="/">Контакты</a></li>
+          </ul>
+        </div>
+        </div>
       </div>
     </header>
     <main>
@@ -558,5 +578,6 @@
         </form>
       </div>
     </div> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
