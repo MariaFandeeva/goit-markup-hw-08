@@ -3,8 +3,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 100%;
   background-color: var(--main-title-color);
   border-radius: 4px;
   padding: 40px;
@@ -29,6 +28,12 @@
   .modal-close-btn:hover &,
   .modal-close-btn:focus & {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
