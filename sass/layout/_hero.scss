@@ -71,10 +71,11 @@
       url("../images/desktop/hero/hero-desktop.jpg");
     padding: 200px 0 280px 0;
   }
-}
-.hero__title {
-  @include font(44px, 900, 60px);
-  max-width: 696px;
+
+  .hero__title {
+    @include font(44px, 900, 60px);
+    max-width: 696px;
+  }
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
