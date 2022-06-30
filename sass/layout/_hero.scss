@@ -76,3 +76,10 @@
   @include font(44px, 900, 60px);
   max-width: 696px;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/desktop/hero/hero@2x.jpg");
+  }
+}
