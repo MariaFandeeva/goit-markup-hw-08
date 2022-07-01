@@ -5,11 +5,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  margin-left: 93px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .subscribe-mail {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -19,6 +19,7 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 20px;
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
 
@@ -41,6 +42,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   min-width: 200px;
+  height: 50px;
   @extend %align;
   @include font(16px, 700, 30px);
   color: var(--main-title-color);
@@ -49,10 +51,27 @@
 }
 .subscribe-form {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-left: 93px;
 }
 .submit-btn-icon {
   fill: var(--main-title-color);
   margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-mail {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .subscribe-title {
+    text-align: left;
+  }
+  .subscribe-mail {
+    width: 358px;
+  }
 }
