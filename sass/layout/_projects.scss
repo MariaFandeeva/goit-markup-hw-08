@@ -81,6 +81,12 @@
 .projects__items:not(:last-child) {
   margin-bottom: var(--tipical-margin);
 }
+@media screen and (max-width: 479px) {
+  .project-link__text {
+    @include font(12px, 20px, 400);
+    padding: 44px 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .projects__items {
     flex-basis: calc(100% / 2 - 30px);
