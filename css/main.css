@@ -65,7 +65,7 @@ img {
 .title-text {
   font-size: 28px;
   font-weight: 700;
-  line-height: 1.17857;
+  line-height: calc($lh / $fs);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -74,7 +74,7 @@ img {
   .title-text {
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.16667;
+    line-height: calc($lh / $fs);
     text-align: center;
     letter-spacing: 0.03em;
   }
@@ -113,6 +113,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section {
+    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -152,7 +153,7 @@ img {
     top: 10px;
     right: 15px;
     background-color: transparent;
-    border: none;
+    border: transparent;
     padding: 0;
     line-height: 0;
     cursor: pointer;
@@ -172,7 +173,7 @@ img {
   .mobile-nav__link {
     font-size: 40px;
     font-weight: 500;
-    line-height: 1.175;
+    line-height: calc($lh / $fs);
     letter-spacing: 0.02em;
     color: var(--title-color);
   }
@@ -188,7 +189,7 @@ img {
   .mobile-contacts__link {
     font-size: 24px;
     font-weight: 500;
-    line-height: 1.16667;
+    line-height: calc($lh / $fs);
     letter-spacing: 0.02em;
     color: var(--main-text-color);
   }
@@ -210,9 +211,27 @@ img {
   .social-mobile__link {
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.22222;
+    line-height: calc($lh / $fs);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-contacts__link--active {
+    font-size: 24px;
+    font-weight: 28px;
+    line-height: calc($lh / $fs);
+  }
+  .mobile-contacts__link {
+    font-size: 18px;
+    font-weight: 20px;
+    line-height: calc($lh / $fs);
+  }
+  .social-mobile__link {
+    font-size: 12px;
+    font-weight: 16px;
+    line-height: calc($lh / $fs);
   }
 }
 
@@ -246,7 +265,7 @@ img {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.16667;
+  line-height: calc($lh / $fs);
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
@@ -255,7 +274,7 @@ img {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.16667;
+  line-height: calc($lh / $fs);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -266,7 +285,7 @@ img {
   .footer-logo-link {
     font-size: 26px;
     font-weight: 700;
-    line-height: 1.19231;
+    line-height: calc($lh / $fs);
   }
   .header__logo {
     margin-right: 93px;
@@ -280,7 +299,7 @@ img {
   font-style: normal;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.16667;
+  line-height: calc($lh / $fs);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -371,7 +390,7 @@ img {
   height: 50px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.875;
+  line-height: calc($lh / $fs);
   color: var(--main-title-color);
   border-color: transparent;
   cursor: pointer;
@@ -457,9 +476,9 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .modal {
-    max-width: 450px;
+    width: 450px;
   }
 }
 
@@ -572,7 +591,7 @@ img {
   align-items: center;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16667;
+  line-height: calc($lh / $fs);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-top: 20px;
@@ -609,7 +628,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.875;
+  line-height: calc($lh / $fs);
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -631,7 +650,7 @@ img {
   .contact-form-checkbox-label {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.71429;
+    line-height: calc($lh / $fs);
   }
 }
 
@@ -688,7 +707,7 @@ img {
   .header__item {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.14286;
+    line-height: calc($lh / $fs);
     color: var(--title-color);
     letter-spacing: 0.02em;
   }
@@ -699,7 +718,7 @@ img {
     transition: color var(--transition-duration) var(--transition-timing-function);
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.14286;
+    line-height: calc($lh / $fs);
     letter-spacing: 0.02em;
     color: var(--title-color);
     transition: color var(--transition-duration) var(--transition-timing-function);
@@ -719,7 +738,7 @@ img {
     align-items: center;
     font-size: 12px;
     font-weight: 500;
-    line-height: 1.16667;
+    line-height: calc($lh / $fs);
     color: var(--header-color);
     letter-spacing: 0.02em;
     transition: color var(--transition-duration) var(--transition-timing-function);
@@ -760,7 +779,7 @@ img {
   .header-contact__link {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.14286;
+    line-height: calc($lh / $fs);
   }
 }
 
@@ -778,7 +797,7 @@ img {
 .hero__title {
   font-size: 26px;
   font-weight: 900;
-  line-height: 1.61538;
+  line-height: calc($lh / $fs);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -819,13 +838,15 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero-desktop.jpg");
     padding: 200px 0 280px 0;
+    background-size: contain;
   }
   .hero__title {
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.36364;
+    line-height: calc($lh / $fs);
     max-width: 696px;
   }
 }
@@ -856,7 +877,7 @@ img {
 .preference-item__title {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14286;
+  line-height: calc($lh / $fs);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
@@ -866,7 +887,7 @@ img {
 .preference-text {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71429;
+  line-height: calc($lh / $fs);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
@@ -943,7 +964,7 @@ img {
   .work-item-text {
     font-size: 14px;
     font-weight: 700;
-    line-height: 1.14286;
+    line-height: calc($lh / $fs);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -991,7 +1012,7 @@ img {
 .team-item__title {
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.1875;
+  line-height: calc($lh / $fs);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -1001,7 +1022,7 @@ img {
 .team-item__text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.1875;
+  line-height: calc($lh / $fs);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -1189,6 +1210,9 @@ img {
     flex-direction: row;
     justify-content: center;
   }
+  .footer-social {
+    margin-bottom: 0;
+  }
   .footer-contacts {
     margin-right: 165px;
   }
@@ -1219,7 +1243,7 @@ img {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.625;
+  line-height: calc($lh / $fs);
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -1287,7 +1311,7 @@ img {
 .projects-item__title {
   font-size: 18px;
   font-weight: 700;
-  line-height: 2;
+  line-height: calc($lh / $fs);
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
@@ -1358,6 +1382,15 @@ img {
 
 .projects__items:not(:last-child) {
   margin-bottom: var(--tipical-margin);
+}
+
+@media screen and (max-width: 479px) {
+  .project-link__text {
+    font-size: 12px;
+    font-weight: 20px;
+    line-height: calc($lh / $fs);
+    padding: 44px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
