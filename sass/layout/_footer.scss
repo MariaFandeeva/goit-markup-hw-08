@@ -17,10 +17,6 @@
 .footer-social {
   margin-bottom: 60px;
 }
-// .footer-contacts {
-//   display: block;
-//   margin-right: 70px;
-// }
 .adress-item {
   transition: color var(--transition-duration) var(--transition-timing-function);
   font-style: normal;
@@ -90,7 +86,9 @@
     flex-direction: row;
     justify-content: center;
   }
-
+  .footer-social {
+    margin-bottom: 0;
+  }
   .footer-contacts {
     margin-right: 165px;
   }
