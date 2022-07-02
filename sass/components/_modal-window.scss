@@ -30,10 +30,16 @@
     fill: var(--accent-color);
   }
 }
+@media screen and (max-width: 419px) {
+  .modal {
+    width: 320px;
+    padding: 30px;
+  }
+}
 
 @media screen and (min-width: 767px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {

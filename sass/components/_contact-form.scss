@@ -146,6 +146,31 @@
     background-color: #188ce8;
   }
 }
+@media screen and (max-width: 419px) {
+  .modal-form-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .contact-form-input {
+    height: 35px;
+    padding-left: 35px;
+  }
+  .contact-form-comment {
+    height: 90px;
+  }
+  .contact-form-field-name {
+    font-size: 10px;
+    line-height: 1.18;
+  }
+  .contact-form-checkbox-label {
+    @include font(8px, 400, 14px);
+    margin-top: 10px;
+  }
+  .contact-form-btn {
+    margin-top: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact-form-checkbox-label {
     @include font(14px, 400, 24px);

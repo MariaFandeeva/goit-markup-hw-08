@@ -113,7 +113,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section {
-    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -479,9 +478,16 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 419px) {
+  .modal {
+    width: 320px;
+    padding: 30px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -647,6 +653,33 @@ img {
 
 .contact-form-btn:hover, .contact-form-btn:focus {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 419px) {
+  .modal-form-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .contact-form-input {
+    height: 35px;
+    padding-left: 35px;
+  }
+  .contact-form-comment {
+    height: 90px;
+  }
+  .contact-form-field-name {
+    font-size: 10px;
+    line-height: 1.18;
+  }
+  .contact-form-checkbox-label {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: calc($lh / $fs);
+    margin-top: 10px;
+  }
+  .contact-form-btn {
+    margin-top: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
