@@ -26,6 +26,17 @@
     line-height: 0;
     margin-left: auto;
   }
+
+  .mobile-menu-open__icon {
+    fill: #000000;
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+
+    .mobile-menu-open-btn:hover &,
+    .mobile-menu-open-btn:focus & {
+      fill: var(--accent-color);
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
