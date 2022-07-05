@@ -65,7 +65,7 @@ img {
 .title-text {
   font-size: 28px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(33px / 28px);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -74,7 +74,7 @@ img {
   .title-text {
     font-size: 36px;
     font-weight: 700;
-    line-height: calc($lh / $fs);
+    line-height: calc(42px / 36px);
     text-align: center;
     letter-spacing: 0.03em;
   }
@@ -172,7 +172,7 @@ img {
   .mobile-nav__link {
     font-size: 40px;
     font-weight: 500;
-    line-height: calc($lh / $fs);
+    line-height: calc(47px / 40px);
     letter-spacing: 0.02em;
     color: var(--title-color);
   }
@@ -188,7 +188,7 @@ img {
   .mobile-contacts__link {
     font-size: 24px;
     font-weight: 500;
-    line-height: calc($lh / $fs);
+    line-height: calc(28px / 24px);
     letter-spacing: 0.02em;
     color: var(--main-text-color);
   }
@@ -210,7 +210,7 @@ img {
   .social-mobile__link {
     font-size: 18px;
     font-weight: 500;
-    line-height: calc($lh / $fs);
+    line-height: calc(22px / 18px);
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
@@ -220,17 +220,17 @@ img {
   .mobile-contacts__link--active {
     font-size: 24px;
     font-weight: 28px;
-    line-height: calc($lh / $fs);
+    line-height: calc(500 / 24px);
   }
   .mobile-contacts__link {
     font-size: 18px;
     font-weight: 20px;
-    line-height: calc($lh / $fs);
+    line-height: calc(500 / 18px);
   }
   .social-mobile__link {
     font-size: 12px;
     font-weight: 16px;
-    line-height: calc($lh / $fs);
+    line-height: calc(500 / 12px);
   }
 }
 
@@ -264,7 +264,7 @@ img {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(28px / 24px);
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
@@ -273,7 +273,7 @@ img {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(28px / 24px);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -284,7 +284,7 @@ img {
   .footer-logo-link {
     font-size: 26px;
     font-weight: 700;
-    line-height: calc($lh / $fs);
+    line-height: calc(31px / 26px);
   }
   .header__logo {
     margin-right: 93px;
@@ -298,7 +298,7 @@ img {
   font-style: normal;
   font-size: 24px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(28px / 24px);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -389,7 +389,7 @@ img {
   height: 50px;
   font-size: 16px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(30px / 16px);
   color: var(--main-title-color);
   border-color: transparent;
   cursor: pointer;
@@ -600,7 +600,7 @@ img {
   align-items: center;
   font-size: 12px;
   font-weight: 400;
-  line-height: calc($lh / $fs);
+  line-height: calc(14px / 12px);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-top: 20px;
@@ -637,7 +637,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(30px / 16px);
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -674,7 +674,7 @@ img {
   .contact-form-checkbox-label {
     font-size: 8px;
     font-weight: 400;
-    line-height: calc($lh / $fs);
+    line-height: calc(14px / 8px);
     margin-top: 10px;
   }
   .contact-form-btn {
@@ -686,7 +686,7 @@ img {
   .contact-form-checkbox-label {
     font-size: 14px;
     font-weight: 400;
-    line-height: calc($lh / $fs);
+    line-height: calc(24px / 14px);
   }
 }
 
@@ -751,7 +751,7 @@ img {
   .header__item {
     font-size: 14px;
     font-weight: 500;
-    line-height: calc($lh / $fs);
+    line-height: calc(16px / 14px);
     color: var(--title-color);
     letter-spacing: 0.02em;
   }
@@ -762,7 +762,7 @@ img {
     transition: color var(--transition-duration) var(--transition-timing-function);
     font-size: 14px;
     font-weight: 500;
-    line-height: calc($lh / $fs);
+    line-height: calc(16px / 14px);
     letter-spacing: 0.02em;
     color: var(--title-color);
     transition: color var(--transition-duration) var(--transition-timing-function);
@@ -782,7 +782,7 @@ img {
     align-items: center;
     font-size: 12px;
     font-weight: 500;
-    line-height: calc($lh / $fs);
+    line-height: calc(14px / 12px);
     color: var(--header-color);
     letter-spacing: 0.02em;
     transition: color var(--transition-duration) var(--transition-timing-function);
@@ -823,7 +823,7 @@ img {
   .header-contact__link {
     font-size: 14px;
     font-weight: 500;
-    line-height: calc($lh / $fs);
+    line-height: calc(16px / 14px);
   }
 }
 
@@ -842,7 +842,7 @@ img {
 .hero__title {
   font-size: 26px;
   font-weight: 900;
-  line-height: calc($lh / $fs);
+  line-height: calc(42px / 26px);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -891,7 +891,7 @@ img {
   .hero__title {
     font-size: 44px;
     font-weight: 900;
-    line-height: calc($lh / $fs);
+    line-height: calc(60px / 44px);
     max-width: 696px;
   }
 }
@@ -922,7 +922,7 @@ img {
 .preference-item__title {
   font-size: 14px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(16px / 14px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
@@ -932,7 +932,7 @@ img {
 .preference-text {
   font-size: 14px;
   font-weight: 400;
-  line-height: calc($lh / $fs);
+  line-height: calc(24px / 14px);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
@@ -1009,7 +1009,7 @@ img {
   .work-item-text {
     font-size: 14px;
     font-weight: 700;
-    line-height: calc($lh / $fs);
+    line-height: calc(16px / 14px);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -1057,7 +1057,7 @@ img {
 .team-item__title {
   font-size: 16px;
   font-weight: 500;
-  line-height: calc($lh / $fs);
+  line-height: calc(19px / 16px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -1067,7 +1067,7 @@ img {
 .team-item__text {
   font-size: 16px;
   font-weight: 400;
-  line-height: calc($lh / $fs);
+  line-height: calc(19px / 16px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -1291,7 +1291,7 @@ img {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: calc($lh / $fs);
+  line-height: calc(26px / 16px);
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -1359,7 +1359,7 @@ img {
 .projects-item__title {
   font-size: 18px;
   font-weight: 700;
-  line-height: calc($lh / $fs);
+  line-height: calc(36px / 18px);
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
@@ -1436,7 +1436,7 @@ img {
   .project-link__text {
     font-size: 12px;
     font-weight: 20px;
-    line-height: calc($lh / $fs);
+    line-height: calc(400 / 12px);
     padding: 44px 24px;
   }
 }
