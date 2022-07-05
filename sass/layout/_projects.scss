@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 479px) {
   .project-link__text {
-    @include font(12px, 20px, 400);
+    @include font(12px, 400, 20px);
     padding: 44px 24px;
   }
 }
