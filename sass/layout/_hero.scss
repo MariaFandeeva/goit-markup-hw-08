@@ -12,6 +12,7 @@
   padding: 118px 0 118px 0;
   margin: auto;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 
   &__title {
     @include font(26px, 900, 42px);
